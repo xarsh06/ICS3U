@@ -1,0 +1,20 @@
+class Colour{
+public String colour="brown";
+public void Display(){
+System.out.println("brown colour");
+}
+}
+class Body{
+public String type="Rolls car";
+public void Display2(){
+System.out.println("Rolls Car");
+}
+}
+public class Car{
+public static void main(String[] args){
+Colour Car1= new Colour();
+Car1.Display();
+Body Car2= new Body();
+Car2.Display2();
+}
+}
