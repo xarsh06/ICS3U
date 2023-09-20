@@ -1,0 +1,4 @@
+a,b=12,18
+add, subtract, multiply, divide= a+b, a-b, a*b, a/b
+print(add,subtract,multiply,divide)
+30 -6 216 0.6666666666666666
