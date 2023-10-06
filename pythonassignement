@@ -1,0 +1,66 @@
+# Input the value of n
+n = int(input("Enter a number: "))
+
+if n < 1:
+    print("Please enter a positive integer.")
+else:
+    # Use sum() with a list comprehension to calculate the sum of squares
+    total = sum([i**i for i in range(1, n + 1)])
+    print("The sum of squares from 1^2 to", n, "^2 is:", total)
+First line takes the value of n from user. Then the user is told to pick a number greater than 0 because this code does not work for negative numbers. Then i made sum a variable and defined it as i to the power of itself in the range from 1 to n+1. 
+
+n = int(input("Enter number of rows: "))
+
+for i in range(1,n+1):
+    for j in range(1, i+1):
+        print(j, end="")
+    print()
+First line asks for the value of n which is our number of rows. Then we establish i as the variable which controls the number of rows. Then we use i to establish j which controls the amount of numbers in each row. Then i used end=”” to make sure all the numbers are in a horizontal pattern and not alone on a row. 
+
+year = int(input("Enter a year: "))
+
+# Check if it's a leap year
+if (year % 4 == 0 ):
+    print(year, "is a leap year.")
+else:
+    print(year, "isn't a leap year.")
+ In this code first the user has to put the year in. Then i used if/else to complete the rest of the code. If the year is divisible by 4 then it means it has 366 days so it is a leap year. If it isnt then that means it is not a leap year. 
+
+import math  
+radius = float(input("Enter the radius of the circle: "))
+area = math.pi * (radius ** 2)
+print("The area of the circle with radius", radius, "is", round(area, 2))
+
+For area of circle i imported math first to have the value of pi. Then the user enters the radius and i used float so they can put a decimal. I create the variable area after which is pi*radius^2. After that the code prints out the radius and the area. 
+
+side = float(input("Enter the length of the cube's side: "))
+surface_area = 6 * side**2
+print("The surface area of the cube with side", side, "is", surface_area)
+
+First the user enters the sode length. Then surface_area is made a variable and the formula is entered. Then the code prints out the surface area along with the entered side length.
+
+import math  
+radius = float(input("Enter the radius of the cylinder: "))
+height = float(input("Enter the height of the cylinder: "))
+base = 2 * math.pi * radius**2
+lateral = 2 * math.pi * radius * height
+total = base + lateral
+print("The surface area of the cylinder with radius", radius, "and height", height, "is", round(total, 2))
+
+Radius and height is taken from user. Then base and lateral formulas are added. Total equals the lateral plus base and after that the output is printed. 
+
+
+import math  
+radius = float(input("Enter the radius of the sphere: "))
+surface_area = 4 * math.pi * radius**2
+print("The surface area of the sphere with radius", radius, "is", round(surface_area, 2))
+
+Radius is taken from the user and surface area is entered as a variable. After adding its formula the code prints out the radius and the corresponding surface area. 
+
+
+
+
+
+
+
+
