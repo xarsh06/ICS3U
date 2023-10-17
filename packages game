@@ -1,0 +1,8 @@
+def main():
+ packages= int(input("Enter packages delievered"))
+ collisions= int(input("Enter number of collisions"))
+ total= packages*50 - collisions*10
+ if packages>collisions: 
+   total=total+500
+ print (total)
+main()
