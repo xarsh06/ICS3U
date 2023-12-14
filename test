@@ -1,0 +1,66 @@
+def test(n):
+#Base case: factorial of 0 or 1 is 1
+    return 1 if n < 2 \
+        else (
+            n * test(n - 1))
+
+num = int(input("Enter a number for factorial: "))
+#checking if the input number is negative
+if num < 0:
+    print("Only positive numbers")
+else:
+# calling the test function to calculate the factorial
+    result = test(num)
+    print(f"The factorial of {num} is: {result}")
+
+
+
+
+import math
+
+def roots():
+    
+    # Get coefficients from the user
+    a = float(input("Enter coefficient a: "))
+    b = float(input("Enter coefficient b: "))
+    c = float(input("Enter coefficient c: "))
+
+    # Calculate discriminant
+    discriminant = b ** 2 - 4 * a * c
+
+    if discriminant < 0:
+        # No real roots
+        print("No real roots, discriminant < 0.")
+    else:
+        # Calculate the square root of the discriminant
+        r = math.sqrt(discriminant)
+
+        if r == 0:
+            # One real root
+            xs = -b / (2 * a)
+            print(f"There is one root: {x}")
+        else:
+            # Two real roots
+            x = (-b + r) / (2 * a)
+            y = (-b - r) / (2 * a)
+            print(f"There are 2 roots: {x} and {y}")
+
+
+# Call the function
+roots()
+
+def sumseries():
+    # user input for how many numbers to add
+    user_count = int(input("how many numbers are to be summed: "))
+
+    # Calculate the total sum
+    result_sum = sum(int(input(f"Input value {i + 1}: ")) for i in range(user_count))
+
+    # Display the result
+    print("sum", result_sum)
+
+# Invoke functions
+sumseries()
+
+
+
