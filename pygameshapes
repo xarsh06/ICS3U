@@ -4,7 +4,11 @@ import pygame
 # initiate pygame and give permission
 # to use pygame's functionality.
 pygame.init()
-
+white = (255, 255, 255)
+green = (0, 255, 0)
+blue = (0, 0, 128)
+black = (0, 0, 0)
+red = (255, 0, 0)
 # create the display surface object
 # of specific dimension.
 window = pygame.display.set_mode((600, 600))
@@ -14,7 +18,7 @@ window.fill((255, 255, 255))
 
 # Using draw.rect module of
 # pygame to draw the solid rectangle
-pygame.draw.rect(window, (0, 0, 0),
+pygame.draw.rect(window, black,
                  [100, 100, 400, 100], 0)
 
 # Draws the surface object to the screen.
@@ -31,15 +35,17 @@ pygame.draw.rect(window, (0, 0, 0),
 
 # Using draw.rect module of
 # pygame to draw the solid circle
-pygame.draw.circle(window, (0, 0, 255),
+pygame.draw.circle(window, blue,
                    [300, 300], 170, 0)
 
 # Draws the surface object to the screen.
 
 
 
-pygame.draw.polygon(window, (255, 0, 0),
-                 [100, 100, 400, 100], 0)
+pygame.draw.polygon(window, red,
+                    [(146, 0), (291, 106),
+                     (236, 277), (56, 277), (0, 106)]),
+
 # create the display surface object
 # of specific dimension.
 
@@ -49,7 +55,7 @@ pygame.draw.polygon(window, (255, 0, 0),
 
 # Using draw.rect module of
 # pygame to draw the line
-pygame.draw.line(window, (0, 255, 0),
+pygame.draw.line(window, green,
                  [100, 300],
                  [500, 300], 5)
 
